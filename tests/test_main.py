@@ -1,4 +1,4 @@
-from ..logic.main import create_app
+from logic.main import create_app
 
 def test_index():
     app = create_app()
