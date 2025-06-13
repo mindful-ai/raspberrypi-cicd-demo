@@ -8,3 +8,7 @@ def create_app():
         return jsonify(message="Hello from Flask CI/CD")
 
     return app
+
+    @app.route("/status")
+    def status():
+        return jsonify(status="OK", environment="raspberry-pi")
